@@ -136,3 +136,23 @@ const inventorNames = inventors.map (
 // Check your work:
 console.log('Exercise 2 my result: ', inventorNames);
 
+
+/*
+Exercise 3: Array.prototype.sort()
+
+Sort the inventors by birth date in ascending order (from those born furthest in
+the past to those born most recently).
+*/
+
+// Complete the exercise in the space below:
+const sortedByBirthYear = inventors.sort(
+    (a,b) => a.year - b.year
+)
+
+// Check your work:
+console.log('Exercise 3 my result: ', sortedByBirthYear);
+
+
+
+
+
