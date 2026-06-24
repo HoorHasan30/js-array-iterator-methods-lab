@@ -102,15 +102,37 @@ born in the 1500's.
   the years 1500 and 1599.
 */
 
+// Complete the exercise in the space below:
 const veryOldInventors = inventors.filter(
     inv => inv.year >= 1500 && inv.year <=1599
 )
 
-// Complete the exercise in the space below:
-
 // Check your work:
 console.log('Exercise 1 my result: ', veryOldInventors);
-console.log('Exercise 1 correct result: ', [
-  { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
-  { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
-]);
+
+
+/*
+Exercise 2: Array.prototype.map()
+
+Map the array of inventors into a new array. This new array should only contain
+objects with the inventors' first and last names.
+
+- For each inventor, return an object in this format: 
+  { first: "First Name", last: "Last Name" }.
+- The new array should be a collection of these objects, each representing an 
+  inventor with only their first and last names.
+
+Hint: Return a new object literal from the callback that looks like:
+      { first: "First Name", last: "Last Name" }
+*/
+
+// Complete the exercise in the space below:
+const inventorNames = inventors.map (
+    names => {
+        return {first: names.first, last: names.last}
+    }
+)
+
+// Check your work:
+console.log('Exercise 2 my result: ', inventorNames);
+
