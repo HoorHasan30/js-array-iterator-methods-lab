@@ -254,15 +254,32 @@ a specific ID 823423 from an array of comment objects.
 - Assign the found comment object to the variable 'commentById'.
 */
 
+// Complete the exercise in the space below:
 const commentById = comments.find(
     id => id.id === 823423
 )
 
-// Complete the exercise in the space below:
-
 // Check your work:
 console.log('Exercise 8 my result: ', commentById);
-console.log('Exercise 8 correct result: ', { text: 'Super good', id: 823423 });
+
+
+/*
+Exercise 9: Array.prototype.findIndex()
+
+Determine the index of the comment that has a specific ID 123523 in an array 
+of comment objects.
+
+- Store the index in the variable 'idx'.
+*/
+
+// Complete the exercise in the space below:
+const idx = comments.findIndex(
+    i => i.id == 123523
+)
+
+// Check your work:
+console.log('Exercise 9 my result: ', idx);
+
 
 
 
